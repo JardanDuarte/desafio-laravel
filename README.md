@@ -182,7 +182,7 @@ http://localhost:8080
 
 ---
 
-### 🔎 Verificando os itens processados
+### Verificando os itens processados
 
 1. Acesse o phpMyAdmin.
 2. Selecione o banco `laravel`.
