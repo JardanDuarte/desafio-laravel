@@ -47,6 +47,8 @@ cd desafio-laravel
 
 ### 2 Subir containers
 
+Levando em consideração que você já tenha o docker instalado em sua maquina.
+
 ```bash
 docker-compose up -d --build
 ```
