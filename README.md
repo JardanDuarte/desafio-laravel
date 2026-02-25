@@ -80,13 +80,13 @@ RABBITMQ_PASSWORD=guest<br>
 RABBITMQ_VHOST=/<br>
 RABBITMQ_QUEUE=default<br>
 
-Alterar as variáveis de conexão com o banco
+Alterar as variáveis de conexão com o banco<br>
 DB_CONNECTION=mysql<br>
 DB_HOST=mysql<br>
 DB_PORT=3306<br>
 DB_DATABASE=laravel<br>
-DB_USERNAME=root<br>
-DB_PASSWORD=laravel<br>
+DB_USERNAME=laravel<br>
+DB_PASSWORD=root<br>
 
 Alterar a variável
 QUEUE_CONNECTION=database para QUEUE_CONNECTION=rabbitmq
