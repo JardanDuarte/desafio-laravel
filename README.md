@@ -284,3 +284,9 @@ Executar múltiplas vezes não gera duplicação de registros.
 - Implementação preparada para cenários de token inválido
 - Arquitetura desacoplada
 - Separação clara entre serviços e jobs
+
+---
+
+## Sobre o Estudo de caso (opcional)
+
+Levando em consideração a trativa que fiz para o desafio que e somente 30 anuncios e vamos supor que agora passa a ser cerca de 50 mil anúncios, eu ajustaria principalmente a forma de paginação e processamento, hoje a aplicação busca uma quantidade pequena e fixa de itens, mas para 50 mil eu faria a busca paginada de forma incremental, processando página por página, em vez de tentar enfileirar tudo de uma vez, também manteria o uso de jobs, mas distribuiria o processamento com múltiplos workers rodando em paralelo. Em um ambiente real, isso poderia ser feito com múltiplos containers ou pods em Kubernetes, permitindo escalar horizontalmente conforme a demanda. No RabbitMQ, configuraria prefetch para evitar que um único worker consuma muitas mensagens ao mesmo tempo, garantindo melhor balanceamento. Em relação ao banco, para um volume maior eu avaliaria substituir operações individuais por processamento em lote, reduzindo a quantidade de queries e melhorando a eficiência. A ideia principal seria manter o processamento desacoplado, escalável e controlado, sem sobrecarregar nem a fila nem o banco.
