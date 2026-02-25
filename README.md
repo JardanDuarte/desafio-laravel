@@ -69,15 +69,16 @@ Copiar .env:
 cd src
 cp .env.example .env
 ```
+
 Criar as seguintes variáveis no .env
 
-MELI_BASE_URL=http://mockoon:3001
-RABBITMQ_HOST=rabbitmq
-RABBITMQ_PORT=5672
-RABBITMQ_USER=guest
-RABBITMQ_PASSWORD=guest
-RABBITMQ_VHOST=/
-RABBITMQ_QUEUE=default
+MELI_BASE_URL=http://mockoon:3001<br>
+RABBITMQ_HOST=rabbitmq<br>
+RABBITMQ_PORT=5672<br>
+RABBITMQ_USER=guest<br>
+RABBITMQ_PASSWORD=guest<br>
+RABBITMQ_VHOST=/<br>
+RABBITMQ_QUEUE=default<br>
 
 Alterar a variável
 QUEUE_CONNECTION=database para QUEUE_CONNECTION=rabbitmq
