@@ -39,7 +39,7 @@ Arquitetura baseada em:
 ### 1 Clonar o repositório
 
 ```bash
-git clone https://github.com/SEU_USUARIO/meli-integration-laravel.git
+git clone https://github.com/JardanDuarte/desafio-laravel.git
 cd desafio-laravel
 ```
 
