@@ -133,7 +133,7 @@ Bus::dispatch(new \App\Jobs\CaptureItemsJob());
 
 ## API REST
 
-Endpoint:
+Endpoint: para buscar os anúncios cadastrado no banco de dados
 
 ```
 GET http://localhost:8000/api/items
@@ -176,8 +176,8 @@ http://localhost:8080
 ### Credenciais
 
 - Servidor: `mysql`
-- Usuário: `root`
-- Senha: `laravel`
+- Usuário: `laravel`
+- Senha: `root`
 - Banco de dados: `laravel`
 
 ---
