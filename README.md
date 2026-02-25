@@ -1,4 +1,4 @@
-# Meli Integration - Laravel + RabbitMQ
+# Desafio Técnico Meli
 
 Desafio técnico desenvolvido para integrar com APIs mockadas do Mercado Livre, utilizando Laravel, RabbitMQ e MySQL.
 
@@ -19,7 +19,7 @@ Desafio técnico desenvolvido para integrar com APIs mockadas do Mercado Livre, 
 
 O fluxo de processamento segue a seguinte ordem:
 
-1. Autenticação via API Meli-Auth
+1. Autenticação
 2. Consulta de anúncios via API Search
 3. Processamento individual de cada anúncio via Job
 4. Persistência no MySQL
